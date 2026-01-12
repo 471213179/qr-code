@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫描查看内容</title>
+    <style>
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .tip {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 15px 0 25px 0;
+        }
+        .qrcode-wrapper {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 25px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>欢迎扫码</h2>
+        <p class="tip">请长按下方二维码图片，在弹出菜单中选择「识别图中的二维码」即可查看最新内容。</p >
+        
+        <div class="qrcode-wrapper">
+            <!-- ！！！请将src替换成你的二维码图片直链 ！！！ -->
+            < img src="https://raw.githubusercontent.com/你的用户名/你的仓库名/main/poster_a.jpg" 
+                 alt="动态内容二维码"
+                 style="width: 250px; height: 250px; display: block;">
+        </div>
+        
+        <p class="tip"><strong>提示：</strong>如果长按无反应，请尝试保存图片后，在微信内从相册选择识别。</p >
+        
+        <div class="footer">
+            <p>内容实时更新 | 安全可信</p >
+        </div>
+    </div>
+</body>
+</html>
